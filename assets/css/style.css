@@ -1,0 +1,7 @@
+.wrapper {
+	float: none;
+	margin: 0 auto;
+}
+
+.centered { vertical-align:middle; text-align:center; }
+.centered img { display:block; margin-left: 25%; margin-right: 25%; }
