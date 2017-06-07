@@ -14,7 +14,7 @@
 <body>
 	<div class="container pull-left wrapper">
 		<div class="row" id="row1">
-			<div class="col-lg-8" id="gifland">
+			<div class="col-lg-8 pull-left" id="gifland">
 				<table class="table" id="giftable">
 					<thead></thead>
 					<tbody>
@@ -36,7 +36,12 @@
 				        </tr>
 				</table>
 			</div>
-			<div class="col-lg-4" id="addbutton">
+			<div class="col-lg-4 pull-right" id="addbutton">
+				<form id="buttonplus">
+			    	<label for="buttonadder">Add a topic!</label>
+			    	<input type="text" id="buttonadder"><br>
+		        	<input id="makebutton" type="submit" value="Add it!">
+			    </form>
 			</div>
 		</div>
 	</div>

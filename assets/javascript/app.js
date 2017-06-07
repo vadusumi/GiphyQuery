@@ -20,11 +20,23 @@ function buttonmaker(){
 	};
 };
 
+
+//Input form that adds to 'topics' string and remakes all buttons.
+$("#makebutton").on("click", function(event){
+	event.preventDefault();
+	var newButton = $("#buttonadder").val().trim();
+	topics.push(newButton);
+	$("#buttonland").html("");
+	buttonmaker();
+	$("#buttonadder").val("");
+});
+
+
 //On click, a button queries the API
 $(document).on("click", ".btn-primary", function(){
 
 	//Redefines queryURL to base structure so that search terms don't endlessly append with repeated searches
-	queryURL = "http://api.giphy.com/v1/gifs/search?api_key=dc6zaTOxFJmzC&limit=10&fmt=json&q="
+	queryURL = "https://api.giphy.com/v1/gifs/search?api_key=dc6zaTOxFJmzC&limit=10&fmt=json&q="
 	queryURL = queryURL + $(this).val();
 	
 	console.log(queryURL);

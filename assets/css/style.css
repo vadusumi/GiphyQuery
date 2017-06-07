@@ -5,3 +5,8 @@
 
 .centered { vertical-align:middle; text-align:center; }
 .centered img { display:block; margin-left: 25%; margin-right: 25%; }
+
+#addbutton {
+	float: right;
+ 	margin: 0 0 10px 10px;
+}
